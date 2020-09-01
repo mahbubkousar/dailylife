@@ -169,6 +169,80 @@ color:#FFF591;
   
   
   <div style="height:80px"></div>
+  
+  
+  
+  
+  
+  <style type="text/css">
+  .callout {
+  position: absolute;
+  top:20px;
+  left: 10px;
+  margin-left: 20px;
+  max-width: 350px;
+  animation: 3s linear okaa;
+  }
+  @keyframes okaa {
+  0% {opacity:0}
+  50% {opacity:50}
+  100% {opacity:100}
+  
+  
+  }
+  .callout-header {
+  padding: 0px 0px;
+  background: #555;
+  font-size: 50px;
+  color: black;
+  }
+  
+  .callout-container {
+  padding: 15px;
+  background-color:#4A5459;
+  color: black
+  }
+  
+  .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  }
+  .closebtnn {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  }
+  
+  .closebtn:hover {
+  color: lightgrey;
+  }
+  
+  </style>
+  
+  
+  <div class="callout">
+  <div class="callout-header"><img src="https://mahbubkousar.github.io/dailylife/hw.jpg" style="width:100%"></div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';" style="padding:5px;background:red;border-radius:50%">&nbsp;×&nbsp;</span>
+  <span class="closebtnn" onclick="this.parentElement.style.display='none';" style="padding:5px;background:black;border-radius:5px">Close</span>
+  
+  <div class="callout-container">
+  <form method="post" action="http://mahbubkousar.000webhostapp.com/gan.php">
+  <p style="color:#FFFFDD;font-size:25px"><b>কয়েকটি গানের নাম লিখো</b></p>
+  <br><input name="field1" type="text" style="width:100%;height:60px;border-radius:19px;color:black;background:#F0F0F0;font-size:20px" />
+  <p style="color:#FFFFDD;font-size:20px"><b>এছাড়াও আরো কিছু বলতে চাইলে বলতে পারো?</b>
+  <input name="field2" type="text" style="width:100%;height:60px;border-radius:19px;color:black;background:#F0F0F0;font-size:20px" />
+ <center> <input type="submit" style="width:200px;height:80px;background:#364F6B;color:white;padding:10px;border-radius:10px;font-size:30px" ></center>
+  </form>
+  
+  </div>
+  </div>
   </body>
   </html>
   
