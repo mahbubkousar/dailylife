@@ -91,9 +91,27 @@ color:#FFF591;
 }
   </style>
   </head>
-  <body>
+  <body onload="disableTest();">
+
+
+<script>
+         function disableTest(){
+
+            document.getElementById("test").disabled = true;
+            var nodes = document.getElementById("test").getElementsByTagName('*');
+            for(var i = 0; i < nodes.length; i++){
+                nodes[i].disabled = true;
+            }
+
+         }
+
+
+     </script>
+
+
 <h1 style="color:white">baba tomar dorbare shob pagoler khela</h1> 
- <div style="opacity:10%"> 
+ <div id="test">
+<div onclick="alert('Disabled for your Raag');">
   <img src="/dailylife/page7.jpg" class="hi">
   <div style="height:30px"></div>
   <div class="j">
@@ -245,7 +263,7 @@ visibility:hidden;
   
   </div>
   </div>
-</div>
+</div></div>
   </body>
   </html>
   
